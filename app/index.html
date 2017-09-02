@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Splitter - Truffle Webpack Demo w/ Frontend</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>My Splitter Project</h1>
+
+  <h3> Splitter Dashboard </h3>
+  <h4> You are <span class="not-owner">not</span> the owner of the splitter manager</h4>
+
+  Status: <span id="status"></span>
+
+  <br>
+  <h1>Buy Product</h1>
+  <br><label for="productIdToBuy">An Id for this product</label><input type="text" id="productIdToBuy" placeholder="e.g., 1"></input>
+  <br><br><button id="send" onclick="App.buyProduct()">Buy this product</button>
+  <br>
+  <h1>Create Product</h1>
+  <br><label for="productId">An Id for this product</label><input type="text" id="productId" placeholder="e.g., 1"></input>
+  <br><label for="productPrice">Price of product in Wei</label><input type="text" id="productPrice" placeholder="e.g., 10000000000"></input>
+  <br><label for="productStock">How many of this product do you want to add?</label><input type="text" id="productStock" placeholder="e.g., 1"></input>
+  <br><br><button id="send" onclick="App.addProduct()">Add Product to Catalog</button>
+  <br><br>
+  <br>
+  <h1>
+    Your Receipts
+  </h1>
+  <div class="purchases"></div>
+</body>
+</html>
